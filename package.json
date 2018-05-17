@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^16.3.2",
+    "react-chromatic": "^0.8.3",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
@@ -15,7 +16,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -c .storybook -o .storybook-public",
+    "chromatic": "chromatic test --storybook-addon --app-code='uhbdyx439s'"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.2",
